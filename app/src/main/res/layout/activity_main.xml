@@ -34,12 +34,14 @@
     <LinearLayout
         android:padding="@dimen/padding"
         android:background="#78ffffff"
-        android:layout_centerVertical="true"
         android:gravity="center_horizontal"
-        android:layout_margin="@dimen/margin"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
 
         <ImageView
             android:src="@drawable/logo_siam"
@@ -59,6 +61,7 @@
 
 
             <EditText
+                android:id="@+id/edtUser"
                 android:textColorHint="@color/colorPrimaryLight"
                 android:textColor="@color/colorPrimaryDark"
                 android:hint="@string/user"
@@ -80,6 +83,7 @@
 
 
             <EditText
+                android:id="@+id/edtPassword"
                 android:textColorHint="@color/colorPrimaryLight"
                 android:textColor="@color/colorPrimaryDark"
                 android:layout_width="match_parent"
@@ -89,6 +93,8 @@
         </LinearLayout>
 
         <TextView
+            android:clickable="true"
+            android:id="@+id/txtNewRegister"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="@dimen/h2"
             android:text="New Register"
@@ -99,6 +105,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/btnLogin"
         android:textColor="@color/textColorPrimary"
         android:background="@color/colorPrimary"
         android:text="@string/Login"
